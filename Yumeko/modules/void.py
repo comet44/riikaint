@@ -4,7 +4,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMo
 from telegram.ext import (
     CallbackContext,
     CommandHandler,
-    run_async
+    run_async,
 )
 
 PHOTO = "https://telegra.ph/file/f9b0895ae78578fda9202.jpg"
