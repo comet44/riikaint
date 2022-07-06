@@ -191,7 +191,8 @@ PAT_TEMPLATES = (
 PAT_GIFS = (
     "https://telegra.ph/file/a4d6c34795f4c00b70037.mp4",
     "https://telegra.ph/file/6514a36327d1c2cd9aa53.mp4",
-"https://telegra.ph/file/230b080082233f87eecac.mp4","https://telegra.ph/file/f116fd3d5e8c2830d9d9d.mp4",
+    "https://telegra.ph/file/230b080082233f87eecac.mp4",
+    "https://telegra.ph/file/f116fd3d5e8c2830d9d9d.mp4",
     "https://telegra.ph/file/27cbcce6bd46c29a64b6a.mp4",
 )
 
