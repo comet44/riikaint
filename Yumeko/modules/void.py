@@ -1,14 +1,9 @@
 from Yumeko import dispatcher
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
 
-from telegram.ext import (
-    CallbackContext,
-    CommandHandler,
-    run_async,
-)
+from telegram.ext import CallbackContext, run_async, CommandHandler
 
 PHOTO = "https://telegra.ph/file/f9b0895ae78578fda9202.jpg"
-
 
 @run_async
 def void(update: Update, context: CallbackContext):
