@@ -175,4 +175,4 @@ class RikkaHandler:
 Rikkacmd = RikkaHandler(d).command
 Rikkamsg = RikkaHandler(d).message
 Rikkacallback = RikkaHandler(d).callbackquery
-Shikimoriinline = ShikimoriHandler(d).inlinequery
+Rikkainline = RikkaHandler(d).inlinequery
