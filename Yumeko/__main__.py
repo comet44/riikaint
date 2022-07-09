@@ -902,9 +902,22 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am Alive](https://telegra.ph/file/ec749863aaffc3dbaff1a.jpg)",
+            dispatcher.bot.send_photo(
+                f"@{SUPPORT_CHAT}", 
+                "Rikka Is Up"
+                "https://telegra.ph/file/ec749863aaffc3dbaff1a.jpg",
                 parse_mode=ParseMode.MARKDOWN,
-            )
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="[Start Rikka!!]",
+                             url="https://t.me/Rikka_Tyrant_bot?start=")
+                     ] 
+                ]
+            ),  
+        )    
+           
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
