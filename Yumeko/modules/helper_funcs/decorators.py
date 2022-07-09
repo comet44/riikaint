@@ -13,7 +13,7 @@ from Yumeko import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
-class ShikimoriHandler:
+class RikkaHandler:
     def __init__(self, d):
         self._dispatcher = d
 
