@@ -198,6 +198,12 @@ def new_member(update: Update, context: CallbackContext):
                     f"Bot Owner just joined the group"
                 )
                 continue
+            
+            if new_mem.id == 5598826878:
+                update.effective_message.reply_photo(
+                    "https://telegra.ph/file/f00a3decb0fa64900098c.jpg", reply_to_message_id=reply
+                )
+                continue
 
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
