@@ -189,8 +189,8 @@ def new_member(update: Update, context: CallbackContext):
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text(
-                    "Woah The Wicked Lord aka my master just entered the chat", reply_to_message_id=reply
+                update.effective_message.reply_photo(
+                    "https://telegra.ph/file/e6f5d5247341a44ecf6bc.png", reply_to_message_id=reply
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
