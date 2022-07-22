@@ -199,6 +199,20 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 continue
             
+RYU_GOD = "https://telegra.ph/file/bf4b0ef0fcb15ef46a0cd.jpg"
+
+# Give the monarch Ryu Welcome
+            if new_mem.id == 5544740697:
+                update.effective_message.reply_photo(
+                   RYU_GOD, f"Welcome to {html.escape(chat.title)} My Liege, How are you Doing?.", reply_to_message_id=reply
+                )
+                welcome_log = (
+                    f"{html.escape(chat.title)}\n"
+                    f"#USER_JOINED\n"
+                    f"My Liege just joined the chat"
+                )
+                continue 
+                
             if new_mem.id == 5598826878:
                 update.effective_message.reply_photo(
                     "https://telegra.ph/file/f00a3decb0fa64900098c.jpg", reply_to_message_id=reply
